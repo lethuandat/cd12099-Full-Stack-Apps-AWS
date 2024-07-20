@@ -43,7 +43,7 @@ import {filterImageFromURL, deleteLocalFiles} from './util/util.js';
         });
       } catch (e) {
         console.log(e);
-        response.status(422).send('Unable to process this image. Please try again!');
+        response.status(500).send('Unable to process this image. Please try again!');
       }
     });
   //! END @TODO1
